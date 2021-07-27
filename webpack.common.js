@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     index: "./src/js/index.js",
     another: "./src/js/another.js",
+    myIndex: "./src/js/main.js",
   },
   output: {
     filename: "[name].[hash:8].js",

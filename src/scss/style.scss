@@ -105,6 +105,9 @@ html {
     &__description {
     color: #0761d6;
     }
+    &__picture {
+      margin-left: 16px;
+    }
     &__title {
         color: #880a01;
         &::before {
@@ -198,7 +201,14 @@ html {
     .myScreen {
       display: none;
     }
+    .learn-technique{
+      &__picture{
+        margin-left: 0px;
+        margin-bottom: 16px;
+      }
+    }
   }
+
   
   @media screen and (min-width: 768px) {
     body {
@@ -208,13 +218,13 @@ html {
     .about-me__photo {
       margin-bottom: 16px;
     }
-  
     .mobile {
       display: none;
     }
     .myScreen {
       color: rgb(218, 231, 39);
     }
+    
     .main {
       display: grid;
       grid-template-areas:
@@ -278,7 +288,7 @@ html {
   
     .article {
       grid-column-start: 1;
-      grid-column-end: 3;
+      grid-column-end: 2;
       grid-row-start: 2;
       grid-row-end: 2;
     }
