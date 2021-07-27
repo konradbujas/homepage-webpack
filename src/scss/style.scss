@@ -1,0 +1,303 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  a {
+    color: #0313eb;
+  }
+  
+  body {
+    background: linear-gradient(52deg, #5050e6, #e2e2f7);
+  }
+  .main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+  
+  .footer {
+    background: #4aeee677;
+    border-radius: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 16px;
+    padding-left: 16px;
+    &__link {
+        color: #720909;
+      }
+  }
+  
+  
+  h2 {
+    color: #0510a8;
+  }
+  
+  a {
+    color: #0313eb;
+  }
+  
+  .newsletter {
+    background: grey;
+    border-radius: 10px;
+    padding: 16px;
+    &__button {
+        background: #e68d09;
+        border-radius: 10px;
+        border: 2px solid #6c3ff3;
+        padding-left: 20px;
+        width: 130px;
+        margin-left: 38%;
+      }
+  }
+  
+  
+  .button__welcome{
+      background: rgb(60, 119, 5);
+      border: none;
+      border-radius: 5px;
+      min-width: 50%;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      
+  }
+  
+  .about-me {
+    padding: 16px;
+    background: #d7cee9;
+    border-radius: 10px;
+    display: block;
+    order: 2;
+    &__description {
+        color: #1f0255;
+      }
+    &__heading {
+        color: #e68d09;
+      }
+    &__photo {
+        float: left;
+        margin-right: 16px;
+        border-radius: 10px;
+        display: block;
+        max-width: 100%;
+      }
+  }
+  
+  .learn-technique{
+    padding: 16px;
+    background: #c2bab3;
+    border: 1px solid #bbb6b6;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    &--special {
+        border: 3px #026312 solid;
+      }
+    &:hover{
+        background: rgb(237, 243, 241);
+        border: 3px blue solid;
+      }
+    &__description {
+    color: #0761d6;
+    }
+    &__title {
+        color: #880a01;
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: blue;
+            margin-right: 12px;
+          }
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: blue;
+            margin-left: 12px;
+          }
+              
+      }
+  }
+  
+  
+  .header {
+    background: rgb(199, 102, 11);
+    padding: 8px;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    &__navigation {
+        background: #fff;
+        min-height: 40px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        }
+  }
+  
+  .hamburger{
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      border: none;
+      background: none;
+      color: rgb(66, 22, 224);
+  }
+  .navigation {
+    background: #fff;
+    padding: 16px;
+    min-height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: none;
+    &--open{
+        display: block;
+    }
+    &__link {
+        color: rgb(119, 64, 64);
+        display: block;
+        margin: 0 0 16px;
+        &--homepage {
+            color: rgb(136, 7, 7);
+          }
+        &:visited{
+            color: #b4b6b8;
+          }
+        &:hover{
+            color: #0761d6;
+          }
+        
+      }
+  }
+  
+  .main {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    &__heading {
+        color: #0b468a;
+      }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .myScreen {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    body {
+      background: linear-gradient(52deg, #5050e6, #e2e2f7);
+    }
+  
+    .about-me__photo {
+      margin-bottom: 16px;
+    }
+  
+    .mobile {
+      display: none;
+    }
+    .myScreen {
+      color: rgb(218, 231, 39);
+    }
+    .main {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "article . aside"
+        "newsletter . aside"
+        "footer footer footer";
+      grid-template-columns: 1fr 50px 200px;
+      column-gap: 16px;
+      row-gap: 16px;
+      padding: 16px;
+      &__heading {
+        min-height: 50px;
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background: rgb(218, 169, 36);
+            margin-right: 12px;
+            }
+      }
+    }
+    
+    .navigation {
+      background: rgb(255, 255, 255);
+      padding: 16px;
+      display: flex;
+      justify-content: center;
+      align-content: stretch;
+      margin: 0 0 100px;
+      &__link {
+        color: rgb(119, 64, 64);
+        display: inline-block;
+        margin-right: 20px;
+        &--homepage {
+            color: rgb(136, 7, 7);
+          }
+      }
+    }
+  
+    .grid__article{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 16px;
+      column-gap: 32px;
+    }
+  
+    .hamburger{
+        display: none;
+    }
+  
+    .header {
+      background: rgba(224, 229, 255, 0.781);
+      margin: 20px auto 0;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 1;
+    }
+  
+    .article {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 2;
+    }
+  
+    .aside {
+      grid-area: aside;
+    }
+  
+    .newsletter {
+      grid-area: newsletter;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 3;
+    }
+  
+    .footer {
+      grid-area: footer;
+      background: rgb(4, 185, 131);
+    }
+  }
+  
