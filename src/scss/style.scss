@@ -171,6 +171,8 @@ html {
     display: none;
     &--open{
         display: block;
+        background: #e9ded4;
+        color: #0761d6;
     }
     &__link {
         color: rgb(119, 64, 64);
@@ -180,7 +182,7 @@ html {
             color: rgb(136, 7, 7);
           }
         &:visited{
-            color: #b4b6b8;
+            color: #808183;
           }
         &:hover{
             color: #0761d6;

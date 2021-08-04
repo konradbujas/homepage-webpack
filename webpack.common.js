@@ -92,19 +92,19 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/pages/myIndex.html",
       inject: true,
-      chunks: ["index", "myIndex"],
+      chunks: ["index"],
       filename: "myIndex.html",
     }),
     new HtmlWebpackPlugin({
       template: "./src/pages/nauka-css.html",
       inject: true,
-      chunks: ["index", "myIndex"],
+      chunks: ["index"],
       filename: "nauka-css.html",
     }),
     new HtmlWebpackPlugin({
       template: "./src/pages/nauka-html.html",
       inject: true,
-      chunks: ["index", "myIndex"],
+      chunks: ["index"],
       filename: "nauka-html.html",
     }),
   ],
