@@ -1,4 +1,4 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](.gh/cover-homepage.png)
 
 # Homepage - made with use webpack
 
