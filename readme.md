@@ -23,3 +23,4 @@ Click on `Use this template` button to generate a new repository based on this s
 - **button welcome** - text will be change past click them - do you try it? ;)
 - responsive: one column on mobile and full view on desktop
 - innerHTML: we can change content in article
+- mouse hover : change background & border on article
